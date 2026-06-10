@@ -1,0 +1,23 @@
+{
+  "name": "retention-mvp",
+  "version": "0.1.0",
+  "private": true,
+  "description": "MVP de retencao de alunos: autenticacao, alunos, WhatsApp (Twilio), IA de retencao (Claude) e dashboard de receita preservada.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "seed": "node src/seed.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.32.1",
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "twilio": "^5.4.0"
+  },
+  "engines": {
+    "node": ">=22.5.0"
+  }
+}
